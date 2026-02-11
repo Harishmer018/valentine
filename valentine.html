@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Happy Valentine’s Day ❤️</h1>
+        <p class="subtitle">Click below for a surprise 💌</p>
+
+        <button onclick="showGallery()" id="btn">Click Here</button>
+
+        <div id="gallery" class="hidden">
+            <h2>Our Beautiful Moments 💕</h2>
+
+            <div class="photos">
+                <img src="images/ph1.jpg" alt="Memory 1">
+                <img src="images/ph2.jpg" alt="Memory 2">
+                <img src="images/ph3.jpg" alt="Memory 3">
+                <img src="images/ph4.jpg" alt="Memory 4">
+            </div>
+
+            <p class="quote">
+                "Every moment with you feels like a dream come true."
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function showGallery() {
+            document.getElementById("gallery").classList.remove("hidden");
+            document.getElementById("btn").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
